@@ -3,29 +3,39 @@
 
 /*Variables globales*/
 * {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Roboto Flex';
     font-style: normal;
     font-size: auto;
 }
 
 :root {
-    --color-negro:black;
+    --color-negro: black;
     --header-color: #7f4199;
-    --color-letra1:white;
+    --color-letra1: white;
     ---color-footer: #276eb5;
     --color-card: #47b876;
-    --color-focus: #a9b2b3 ;
-    --color-form:#bfc9ca;
-;
+    --color-focus: #a9b2b3;
+    --color-form: #bfc9ca;
+    ;
 }
 
 a {
     text-decoration: none;
-    color:var(--color-letra1)
+    color: var(--color-letra1)
 }
 
 ul {
     list-style-type: none;
+}
+
+body {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
 }
 
 
@@ -33,10 +43,11 @@ ul {
 header {
     background-color: var(--header-color);
     padding: 20px;
-    color:var(--color-letra1);
+    color: var(--color-letra1);
 }
 
-header, .navegacion ul {
+header,
+.navegacion ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -55,19 +66,23 @@ header, .navegacion ul {
 
 @media (max-width:768px) {
     header {
-        display:block;
+        display: block;
     }
+
     .navegacion ul li {
         margin-top: 10px;
     }
-    
+
     .acerca .__container {
         display: block;
     }
 }
 
 @media (min-width:1024px) {
-    p, a, article {
+
+    p,
+    a,
+    article {
         font-size: 1em;
     }
 }
@@ -76,10 +91,17 @@ footer {
     width: 100%;
     text-align: center;
     position: relative;
-    width: 100%;
     bottom: 0;
+    width: 100%;
     background-color: var(---color-footer);
-}   
+    position: absolute;
+    bottom: 0;
+}
+
+#footer {
+    position: absolute;
+    bottom: 1;
+}
 
 footer ul {
     display: flex;
@@ -98,17 +120,16 @@ footer ul li {
 footer p {
     padding: 5px;
 }
-
 /*Fin----------------------------------------------------*/
 
 /*Comienzo index------------------------------------------*/
 .acerca {
-    margin:2em;
+    margin: 2em;
 }
 
 .__container {
     display: flex;
-    margin:1em;
+    margin: 1em;
 }
 
 .__img-juan img {
@@ -116,11 +137,12 @@ footer p {
     height: auto;
     border-radius: 5px;
 }
+
 /*Fin-------------------------------------------------------*/
 
 /*Comienzo proyectos----------------------------------------*/
 .section-proyectos {
-    margin:2em;
+    margin: 2em;
 }
 
 .proyectos {
@@ -128,10 +150,8 @@ footer p {
     margin: min(10px, 10px, 5px, 10px);
     display: grid;
     grid-template-columns:
-        repeat(
-            auto-fit,
-            minmax(360px, 1fr)
-        );
+        repeat(auto-fit,
+            minmax(360px, 1fr));
     place-items: center;
 }
 
@@ -139,7 +159,7 @@ footer p {
     text-align: center;
     border: 2px solid black;
     border-radius: 10px;
-    margin:15px;
+    margin: 15px;
     padding: 10px;
     box-sizing: border-box;
     max-width: 350px;
@@ -157,7 +177,7 @@ footer p {
 }
 
 .proyecto__item {
-    margin:10px;
+    margin: 10px;
 }
 
 .--img {
@@ -165,6 +185,7 @@ footer p {
     border-radius: 10px;
     border: 2px solid black;
 }
+
 /*Fin -------------------------------------------------------*/
 
 /*Formulario de contacto ---------------------------*/
@@ -173,15 +194,15 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .contacto h2 {
-    margin:1em
+    margin: 1em
 }
 
 .form {
-    border:2px solid black;
+    border: 2px solid black;
     padding: 10px;
     border-radius: 10px;
     display: flex;
@@ -194,19 +215,22 @@ footer p {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin:5px;
+    margin: 5px;
 }
 
-.form__campo input, textarea {
-    border:none;
+.form__campo input,
+textarea {
+    border: none;
     border-radius: 5px;
-    padding:2px;
-}
-.form__campo input:focus{
-    background-color: var(--color-focus) ;
+    padding: 2px;
 }
 
-.form__campo textarea:focus{
-    background-color: var(--color-focus) ;
+.form__campo input:focus {
+    background-color: var(--color-focus);
 }
+
+.form__campo textarea:focus {
+    background-color: var(--color-focus);
+}
+
 /*Fin-------------------------------------------*/
