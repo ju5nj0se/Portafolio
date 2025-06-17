@@ -68,13 +68,18 @@ header {
 /*End------------------------------------*/
 
 /*Footer-------------------------*/
-#footer {
+.footer {
    padding: 2em;
    background-color: #333446;
 }
 
 footer a {
     color: white;
+    transition: transform 0.3s ease;
+}
+
+footer a:hover {
+    transform: scale(1.1);
 }
 
 .foot {
