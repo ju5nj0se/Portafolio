@@ -15,10 +15,10 @@
 <body>
     <!--Header--------------------------------------->
     <header class="container-fluid sticky-top">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container --header__content">
-                <a class="navbar-brand --header__tittle" href="index.html">Juan Jose</a>
-                <button class="navbar-toggler font-weight-bold rounded text-uppercase" type="button"
+                <a class="navbar-brand --header__tittle" href="#page-top">Portfolio on Juan Jose</a>
+                <button class="navbar-toggler font-weight-bold rounded" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
                     aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -27,11 +27,15 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                                href="index.html">Home</a></li>
+                                href="#portfolio">Home</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                                href="portafolio.html">Portfolio</a></li>
+                                href="#services">Services</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                                href="contact.html">Contact</a></li>
+                                href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                href="#about">About me</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,14 +46,12 @@
     <!--About me-------------------------------------------->
     <section id="hero" class="p-5">
         <div class="container-fluid">
-            <div class="row m-4 --content-hero">
-                <div class="col-6 m-4 --content-hero__item --img">
-                    <img src="imgs/juan.jpg" alt="Imagen de Ejemplo">
+            <div class="row m-4 hero">
+                <div class="col-6 m-4 hero__item --img">
+                    <img src="imgs/juann.jpg" alt="Imagen de Ejemplo">
                 </div>
-                <div class="col-6 m-4 --content-hero__item --text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis fugit fuga architecto ut
-                        et, iusto voluptatibus voluptatem sunt rem soluta, adipisci repellendus doloribus quisquam aut
-                        neque. Vitae, quae doloremque! Vitae!</p>
+                <div class="col-6 m-4 hero__item --text">
+                    <p>Curious for the nex technologies, always learning about programming.</p>
                 </div>
             </div>
 
@@ -84,7 +86,7 @@
         <div class="container-fluid">
             <h2 class="h2 mb-4">Portfolio</h2>
             <div class="row">
-                <div class="col --content-card">
+                <div class="col cards">
                     <div class="card">
                         <ul class="list-group list-group-flush">
                             <li class="list-group">
@@ -103,12 +105,12 @@
                     <div class="card">
                         <ul class="list-group list-group-flush">
                             <li class="list-group">
-                                <div class="--img-card">
-                                    <p class="text-hover"><b>Raton</b></p>
+                                <div class="--img-card --minesweeper">
+                                    <p class="text-hover"><b>Minesweeper</b></p>
                                 </div>
                             </li>
                             </li>
-                            <li class="list-group-item --text">Complete</li>
+                            <li class="list-group-item --text">In process</li>
                             <li class="list-group-item --text"><a href="https://github.com/ju5nj0se/RulesOfUniverse"
                                     target="_blank">GitHub</a></li>
                         </ul>
@@ -118,12 +120,12 @@
                     <div class="card">
                         <ul class="list-group list-group-flush">
                             <li class="list-group">
-                                <div class="--img-card">
-                                    <p class="text-hover"><b>Raton</b></p>
+                                <div class="--img-card --tetrix">
+                                    <p class="text-hover"><b>Tetrix</b></p>
                                 </div>
                             </li>
                             </li>
-                            <li class="list-group-item --text">Complete</li>
+                            <li class="list-group-item --text">In process</li>
                             <li class="list-group-item --text"><a href="https://github.com/ju5nj0se/RulesOfUniverse"
                                     target="_blank">GitHub</a></li>
                         </ul>
@@ -167,11 +169,21 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer>
         <div class="container-fluid">
-           <div class="col">
-            <a href="https://www.instagram.com/ju5njo_7/"><img src="icons/instagram-brands(1).svg" alt=""></a>
-           </div>
+            <div class="row foot">
+                <div class="col foot__item">
+                    <a href="https://www.instagram.com/ju5njo_7/" target="_blank">Instagram</a>
+                </div>
+                <div class="col foot__item">
+                    <a href="https://www.linkedin.com/in/juan-jos%C3%A9-hern%C3%A1ndez-mart%C3%ADnez-3a0524331/"
+                        target="_blank">Linkedin</a>
+                </div>
+
+                <div class="col foot__item">
+                    <a href="https://github.com/ju5nj0se" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
 
     </footer>
