@@ -4,7 +4,7 @@
 
 Correo: juaan.josehernandez@gmail.com
 
-## Tecnologias utilizadas
+## Technologys
 * HTML
 * CSS
 
